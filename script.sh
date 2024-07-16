@@ -18,7 +18,7 @@ nha ${flags} ds new \
 --model fly-bert-nha \
 --details '{"extraction_date": "2023-02-14"}' \
 --path ./datasets/
-# check it at nha ds listyy
+# check it at nha ds list
 
 # create your project
 nha ${flags} proj new \
@@ -63,7 +63,7 @@ nha ${flags} depl new \
 
 # test your api (direct call to the service)
 curl -X POST \
---data '{"data":"How far is new york to new jersey?"}' \
+--data '{"data":"which time is the new york flight arriving?"}' \
 -H '{"Content-Type": "application/json"}' \
 http://127.0.0.1:30052/predict \
 && echo
